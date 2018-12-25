@@ -55,9 +55,8 @@ class ViewController: UIViewController {
     
     @IBAction func btnAction(_ sender: Any) {
         
-        // create user defaults.
-        UserDefaults.standard.setValue(txtUserName.text, forKey: "username")
-        UserDefaults.standard.setValue(txtPassword.text, forKey: "password")
+        UserDefaults.standard.setValue(txtUserName.text, forKey: "firstName")
+        UserDefaults.standard.setValue(txtPassword.text, forKey: "lastName")
         UserDefaults.standard.synchronize()
         
     }

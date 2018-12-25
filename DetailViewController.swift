@@ -16,10 +16,10 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         // read user defaults.
-        if let username = UserDefaults.standard.string(forKey: "username"), let password = UserDefaults.standard.string(forKey: "password"){
+        if let firstName = UserDefaults.standard.string(forKey: "firstName"), let lastName = UserDefaults.standard.string(forKey: "lastName"){
             
-            lblText.text = "Welcome \(username) \(password)"
-            print("\(username) \(password)")
+            lblText.text = "Welcome \(firstName) \(lastName)"
+            print("\(firstName) \(lastName)")
         }
         
         // Do any additional setup after loading the view.
